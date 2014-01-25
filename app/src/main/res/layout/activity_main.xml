@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbff53">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/topWindow"
+        android:padding="10dp"
+        android:background="#13ff82">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Window A"
+            android:id="@+id/counterTV"
+            android:gravity="center_horizontal"
+            android:background="#ff6c37" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Frags\nPresent"
+            android:id="@+id/bottomIndicator"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="25dp"
+            android:id="@+id/fragContainer"></FrameLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButtonContainer">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Fragment"
+            android:id="@+id/addFragButton"
+            android:layout_gravity="center_horizontal|left" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Current Frag."
+            android:id="@+id/deleteFragButton"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navButtonsContainer">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prev. Frag"
+            android:id="@+id/prevButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Frag"
+            android:id="@+id/nextButton"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>
